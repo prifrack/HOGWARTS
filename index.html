@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Hogwarts</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Formulario de Hogwarts</h1>
+        <form id="hogwartsForm" action="#" method="post">
+            <div class="avatar-container">
+                <img id="avatarImg" src="imagen.png" alt="Avatar del estudiante">
+            </div>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" required>
+
+            <label for="familia">Familia:</label>
+            <input type="text" id="familia" name="familia" required>
+
+            <label for="linaje">Linaje:</label>
+            <select id="linaje" name="linaje" required>
+                <option value="mestizo">Mestizo</option>
+                <option value="muggle">Muggle</option>
+                <option value="sangrePura">Sangre Pura</option>
+            </select>
+
+            <label for="cualidades">Cualidades:</label>
+            <input type="text" id="cualidades" name="cualidades" required>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
